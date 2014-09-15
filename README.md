@@ -1,4 +1,3 @@
-sass-guide
-==========
+# Sass guide for getting things done.
 
-Sass guide for getting things done.
+This is a living document and new ideas are always welcome.
