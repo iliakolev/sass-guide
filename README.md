@@ -4,14 +4,14 @@ This is a living document and new ideas are always welcome.
 
 ## Table of Contents
 
-1. [Formatting](#formatting)
- 1.1. [80 character limit] (#character-limit)
+1. [Formatting](#1-formatting)
+ - [80 character limit] (#character-limit)
 
 ## 1. Formatting
 
 Consistency is key.
 
-### 1.1. 80 character limit
+### 80 character limit
 
 There are other reasons for shorter lines, apart from history and screen sizes:
 
