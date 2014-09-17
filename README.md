@@ -41,6 +41,6 @@ button {
 
 // Good: 4 spaces
 button {
-    text-transform: upperace;
+    text-transform: uppercace;
 }
 ```
