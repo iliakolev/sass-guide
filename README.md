@@ -8,6 +8,7 @@ This is a living document and new ideas are always welcome.
  - [80 character limit](#80-character-limit)
  - [Border](#border)
  - [Capitalization](#capitalization)
+ - [Color](#color)
  - [Indentation](#indentation)
 
 ## 1. Formatting
@@ -33,7 +34,7 @@ There are other reasons for shorter lines, apart from history and screen sizes:
 
 ### Border
 
-Prefer `border: 0;` over `border: none;`
+Prefer `border: 0;` over `border: none;`.
 
 ```scss
 // bad
@@ -59,9 +60,13 @@ IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
 .selector {}
 ```
 
+### Color
+
+Prefer hexadecimal color codes over color keywords.
+
 ### Indentation
 
-Use 4 space indentation
+Use 4 space indentation.
 
 ```scss
 // bad: 2 spaces
