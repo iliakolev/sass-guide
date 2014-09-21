@@ -6,6 +6,7 @@ This is a living document and new ideas are always welcome.
 
 1. [Formatting](#1-formatting)
  - [80 character limit](#80-character-limit)
+ - [Border](#border)
  - [Indentation](#indentation)
 
 ## 1. Formatting
@@ -29,18 +30,34 @@ There are other reasons for shorter lines, apart from history and screen sizes:
 // don't worry about it too much.
 ```
 
+### Border
+
+Prever `border: 0;` over `border: none;`
+
+```scss
+// Bad
+.selector {
+    border: none;
+}
+
+// Good
+.selector {
+    border: 0;
+}
+```
+
 ### Indentation
 
 Use 4 space indentation
 
 ```scss
 // Bad: 2 spaces
-button {
+.selector {
   text-transform: uppercase;
 }
 
 // Good: 4 spaces
-button {
+.selector {
     text-transform: uppercase;
 }
 ```
