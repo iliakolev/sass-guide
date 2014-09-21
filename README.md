@@ -32,7 +32,7 @@ There are other reasons for shorter lines, apart from history and screen sizes:
 
 ### Border
 
-Prever `border: 0;` over `border: none;`
+Prefer `border: 0;` over `border: none;`
 
 ```scss
 // Bad
