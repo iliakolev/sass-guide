@@ -64,6 +64,18 @@ IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
 
 Prefer hexadecimal color codes over color keywords.
 
+```scss
+// bad
+.selector {
+    color: white;
+}
+
+// good
+.selector {
+    color: #fff;
+}
+```
+
 ### Indentation
 
 Use 4 space indentation.
