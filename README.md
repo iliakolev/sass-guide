@@ -59,6 +59,17 @@ IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
 // good
 .selector {}
 ```
+### Comment
+
+Prefer `//` comments over `/* ... */`.
+
+```scss
+// bad
+/* This is a comment that gets rendered. */
+
+// good
+// This comment never gets rendered.
+```
 
 ### Color
 
