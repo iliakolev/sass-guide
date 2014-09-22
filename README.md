@@ -9,6 +9,7 @@ This is a living document and new ideas are always welcome.
  - [Border](#border)
  - [Capitalization](#capitalization)
  - [Color](#color)
+ - [Comment](#comment)
  - [Indentation](#indentation)
 
 ## 1. Formatting
