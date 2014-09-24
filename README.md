@@ -9,7 +9,7 @@ This is a living document and new ideas are always welcome.
  - [Border](#border)
  - [Capitalization](#capitalization)
  - [Color](#color)
- - [Comment](#comment)
+ - [Comments](#comments)
  - [Indentation](#indentation)
 
 ## 1. Formatting
@@ -60,7 +60,19 @@ IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
 // good
 .selector {}
 ```
-### Comment
+### Comments
+
+Begin every new section with a title.
+
+```scss
+// *************************************
+//
+//   #SECTION-TITLE
+//
+// *************************************
+
+.selector {}
+```
 
 Prefer `//` comments over `/* ... */`.
 
