@@ -10,7 +10,7 @@ This is a living document and new ideas are always welcome.
  - [Capitalization](#capitalization)
  - [Color](#color)
  - [Indentation](#indentation)
-2. [Comments](#comments)
+2. [Comments](#2-comments)
 
 
 ## 1. Formatting
