@@ -9,8 +9,9 @@ This is a living document and new ideas are always welcome.
  - [Border](#border)
  - [Capitalization](#capitalization)
  - [Color](#color)
- - [Comments](#comments)
  - [Indentation](#indentation)
+2. [Comments](#comments)
+
 
 ## 1. Formatting
 
@@ -60,29 +61,6 @@ IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
 // good
 .selector {}
 ```
-### Comments
-
-Begin every new section with a title.
-
-```scss
-// *************************************
-//
-//   #SECTION-TITLE
-//
-// *************************************
-
-.selector {}
-```
-
-Prefer `//` comments over `/* ... */`.
-
-```scss
-// bad
-/* This is a comment that gets rendered. */
-
-// good
-// This comment never gets rendered.
-```
 
 ### Color
 
@@ -114,4 +92,30 @@ Use 4 space indentation.
 .selector {
     text-transform: uppercase;
 }
+```
+
+
+
+## 2. Comments
+
+Begin every new section with a title.
+
+```scss
+// *************************************
+//
+//   #SECTION-TITLE
+//
+// *************************************
+
+.selector {}
+```
+
+Prefer `//` comments over `/* ... */`.
+
+```scss
+// bad
+/* This is a comment that gets rendered. */
+
+// good
+// This comment never gets rendered.
 ```
