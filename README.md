@@ -11,7 +11,7 @@ This is a living document and new ideas are always welcome.
  - [Color](#color)
  - [Indentation](#indentation)
 2. [Comments](#2-comments)
-
+ - [Section](#section)
 
 ## 1. Formatting
 
@@ -98,6 +98,10 @@ Use 4 space indentation.
 
 ## 2. Comments
 
+Well commented code is extremely important.
+
+### Section
+
 Begin every new section with a title.
 
 ```scss
@@ -108,6 +112,30 @@ Begin every new section with a title.
 // *************************************
 
 .selector {}
+```
+
+Each title should be preceded by five (5) carriage returns.
+
+```scss
+// *************************************
+//
+//   #SECTION-ALPHA
+//
+// *************************************
+
+.selector-alpha {}
+
+
+
+
+
+// *************************************
+//
+//   #SECTION-BETA
+//
+// *************************************
+
+.selector-beta {}
 ```
 
 Prefer `//` comments over `/* ... */`.
