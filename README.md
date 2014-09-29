@@ -12,6 +12,9 @@ This is a living document and new ideas are always welcome.
  - [Indentation](#indentation)
 2. [Comments](#2-comments)
  - [Section](#section)
+ - [Sub-section](#sub-section)
+
+
 
 ## 1. Formatting
 
@@ -102,7 +105,7 @@ Well commented code is extremely important.
 
 ### Section
 
-Begin every new section with a title.
+Begin every section block with a title.
 
 ```scss
 // *************************************
@@ -136,6 +139,17 @@ Each title should be preceded by five (5) carriage returns.
 // *************************************
 
 .selector-beta {}
+```
+
+### Sub-section
+
+Begin every sub-section block with a title.
+
+```scss
+//   #SUB-SECTION-TITLE
+// *************************************
+
+.selector {}
 ```
 
 Prefer `//` comments over `/* ... */`.
