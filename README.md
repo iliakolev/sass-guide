@@ -10,6 +10,7 @@ This is a living document and new ideas are always welcome.
  - [Capitalization](#capitalization)
  - [Color](#color)
  - [Indentation](#indentation)
+ - [Leading Zero](#leading-zero)
 2. [Comments](#2-comments)
  - [Section](#section)
  - [Sub-section](#sub-section)
@@ -97,7 +98,21 @@ Use 4 space indentation.
 }
 ```
 
+### Leading Zero
 
+Don't write leading zeros for numeric values with a decimal point.
+
+```scss
+// bad: unnecessary leading zero
+.selector {
+    padding: 0.75em;
+}
+
+// good: no leading zero
+.selector {
+    padding: .75em;
+}
+```
 
 ## 2. Comments
 
