@@ -9,6 +9,7 @@ This is a living document and new ideas are always welcome.
  - [Border](#border)
  - [Capitalization](#capitalization)
  - [Color](#color)
+ - [Declaration Order](#declaration-order)
  - [Indentation](#indentation)
  - [Leading Zero](#leading-zero)
 2. [Comments](#2-comments)
@@ -79,6 +80,27 @@ Prefer hexadecimal color codes over color keywords.
 // good
 .selector {
     color: #fff;
+}
+```
+
+### Declaration Order
+
+Rule sets should be ordered as follows: `@extend` declarations, `@include`
+declarations, then nested rule sets.
+
+```scss
+// bad
+.selector {
+    padding: 10px;
+    @include box();
+    @extend %clearfix;
+}
+
+// good
+.selector {
+    @extend %clearfix;
+    @include box();
+    padding: 10px;
 }
 ```
 
