@@ -12,6 +12,7 @@ This is a living document and new ideas are always welcome.
  - [Declaration Order](#declaration-order)
  - [Indentation](#indentation)
  - [Leading Zero](#leading-zero)
+ - [Url Quotes](#url-quotes)
 2. [Comments](#2-comments)
  - [Section](#section)
  - [Sub-section](#sub-section)
@@ -133,6 +134,27 @@ Don't write leading zeros for numeric values with a decimal point.
 // good: no leading zero
 .selector {
     padding: .75em;
+}
+```
+
+### Url Quotes
+
+URLs should always be enclosed within quotes.
+
+Using quoted URLs is consistent with using other Sass asset helpers, which also
+expect quoted strings. It also works better with most syntax highlighters, and
+makes it easier to escape characters, as the escape rules for strings apply,
+rather than the different set of rules for literal URLs.
+
+```scss
+// bad: no enclosing quotes
+.selector {
+    background: url(example.png);
+}
+
+// good
+.selector {
+    background: url("example.png");
 }
 ```
 
