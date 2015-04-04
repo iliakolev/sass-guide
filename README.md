@@ -73,15 +73,11 @@ IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
 Prefer hexadecimal color codes over color keywords.
 
 ```scss
-// bad
-.selector {
-    color: white;
-}
+// bad: color keyword
+$color-brand: black;
 
-// good
-.selector {
-    color: #fff;
-}
+// good: hexadecimal color
+$color-brand: #000;
 ```
 
 ### Declaration Order
