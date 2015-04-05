@@ -4,7 +4,10 @@ This is a living document and new ideas are always welcome.
 
 ## Table of Contents
 
-1. [Formatting](#1-formatting)
+1. [Comments](#1-comments)
+ - [Section](#section)
+ - [Sub-section](#sub-section)
+2. [Formatting](#2-formatting)
  - [80 character limit](#80-character-limit)
  - [Border](#border)
  - [Capitalization](#capitalization)
@@ -13,13 +16,78 @@ This is a living document and new ideas are always welcome.
  - [Indentation](#indentation)
  - [Leading Zero](#leading-zero)
  - [Url Quotes](#url-quotes)
-2. [Comments](#2-comments)
- - [Section](#section)
- - [Sub-section](#sub-section)
 
 
 
-## 1. Formatting
+
+
+## 1. Comments
+
+Well commented code is extremely important.
+
+### Section
+
+Begin every section block with a title.
+
+```scss
+// *************************************
+//
+//   #SECTION-TITLE
+//
+// *************************************
+
+.selector {}
+```
+
+Each title should be preceded by five (5) carriage returns.
+
+```scss
+// *************************************
+//
+//   #SECTION-ALPHA
+//
+// *************************************
+
+.selector-alpha {}
+
+
+
+
+
+// *************************************
+//
+//   #SECTION-BETA
+//
+// *************************************
+
+.selector-beta {}
+```
+
+### Sub-section
+
+Begin every sub-section block with a title.
+
+```scss
+//   #SUB-SECTION-TITLE
+// *************************************
+
+.selector {}
+```
+
+Prefer `//` comments over `/* ... */`.
+
+```scss
+// bad
+/* This is a comment that gets rendered. */
+
+// good
+// This comment never gets rendered.
+```
+
+
+
+
+## 2. Formatting
 
 Consistency is key.
 
@@ -152,67 +220,3 @@ rather than the different set of rules for literal URLs.
 .selector {
     background: url("example.png");
 }
-```
-
-## 2. Comments
-
-Well commented code is extremely important.
-
-### Section
-
-Begin every section block with a title.
-
-```scss
-// *************************************
-//
-//   #SECTION-TITLE
-//
-// *************************************
-
-.selector {}
-```
-
-Each title should be preceded by five (5) carriage returns.
-
-```scss
-// *************************************
-//
-//   #SECTION-ALPHA
-//
-// *************************************
-
-.selector-alpha {}
-
-
-
-
-
-// *************************************
-//
-//   #SECTION-BETA
-//
-// *************************************
-
-.selector-beta {}
-```
-
-### Sub-section
-
-Begin every sub-section block with a title.
-
-```scss
-//   #SUB-SECTION-TITLE
-// *************************************
-
-.selector {}
-```
-
-Prefer `//` comments over `/* ... */`.
-
-```scss
-// bad
-/* This is a comment that gets rendered. */
-
-// good
-// This comment never gets rendered.
-```
