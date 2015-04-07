@@ -238,8 +238,8 @@ and `!default` declarations.
 
 ```scss
 // bad
-$color-brand: #222!important;
+$color-brand: #222!default;
 
 // good
-$color-brand: #222 !important;
+$color-brand: #222 !default;
 ```
