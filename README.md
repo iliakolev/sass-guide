@@ -16,6 +16,8 @@ This is a living document and new ideas are always welcome.
  - [Indentation](#indentation)
  - [Leading Zero](#leading-zero)
  - [Url Quotes](#url-quotes)
+3. [Linters](#3-linters)
+ - [BangFormat](#bangformat)
 
 
 
@@ -220,3 +222,24 @@ rather than the different set of rules for literal URLs.
 .selector {
     background: url("example.png");
 }
+
+
+
+
+
+## 3. Linters
+
+Below is a list of linters supported by scss-lint, ordered alphabetically.
+
+### BangFormat
+
+Reports when you use improper spacing around `!` (the "bang") in `!important`
+and `!default` declarations.
+
+```scss
+// bad
+$color-brand: #222!important;
+
+// good
+$color-brand: #222 !important;
+```
