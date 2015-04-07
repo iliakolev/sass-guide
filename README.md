@@ -222,7 +222,7 @@ rather than the different set of rules for literal URLs.
 .selector {
     background: url("example.png");
 }
-
+```
 
 
 
