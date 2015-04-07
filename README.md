@@ -9,7 +9,6 @@ This is a living document and new ideas are always welcome.
  - [Sub-section](#sub-section)
 2. [Formatting](#2-formatting)
  - [80 character limit](#80-character-limit)
- - [Border](#border)
  - [Capitalization](#capitalization)
  - [Color](#color)
  - [Declaration Order](#declaration-order)
@@ -18,6 +17,7 @@ This is a living document and new ideas are always welcome.
  - [Url Quotes](#url-quotes)
 3. [Linters](#3-linters)
  - [BangFormat](#bangformat)
+ - [BorderZero](#borderzero)
 
 
 
@@ -108,22 +108,6 @@ There are other reasons for shorter lines, apart from history and screen sizes:
 // yourself to make some line fit when it just doesn't. I suggest that you try 
 // to keep all of your code under 80 columns, but when it just doesn't fit, 
 // don't worry about it too much.
-```
-
-### Border
-
-Prefer `border: 0;` over `border: none;`.
-
-```scss
-// bad
-.selector {
-    border: none;
-}
-
-// good
-.selector {
-    border: 0;
-}
 ```
 
 ### Capitalization
@@ -242,4 +226,21 @@ $color-brand: #222!default;
 
 // good
 $color-brand: #222 !default;
+```
+
+### BorderZero
+
+Prefer the terser `border: 0` over `border: none`.
+
+
+```scss
+// bad
+.selector {
+    border: none;
+}
+
+// good
+.selector {
+    border: 0;
+}
 ```
