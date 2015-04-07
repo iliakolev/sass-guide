@@ -10,7 +10,6 @@ This is a living document and new ideas are always welcome.
 2. [Formatting](#2-formatting)
  - [80 character limit](#80-character-limit)
  - [Capitalization](#capitalization)
- - [Color](#color)
  - [Declaration Order](#declaration-order)
  - [Indentation](#indentation)
  - [Leading Zero](#leading-zero)
@@ -18,6 +17,7 @@ This is a living document and new ideas are always welcome.
 3. [Linters](#3-linters)
  - [BangFormat](#bangformat)
  - [BorderZero](#borderzero)
+ - [ColorKeyword](#colorkeyword)
 
 
 
@@ -120,18 +120,6 @@ IDs, classes, types, placeholders, and pseudo-selectors should be all lowercase.
 
 // good
 .selector {}
-```
-
-### Color
-
-Prefer hexadecimal color codes over color keywords.
-
-```scss
-// bad: color keyword
-$color-brand: black;
-
-// good: hexadecimal color
-$color-brand: #000;
 ```
 
 ### Declaration Order
@@ -243,4 +231,16 @@ Prefer the terser `border: 0` over `border: none`.
 .selector {
     border: 0;
 }
+```
+
+### ColorKeyword
+
+Prefer hexadecimal color codes over color keywords.
+
+```scss
+// bad: color keyword
+$color-brand: black;
+
+// good: hexadecimal color
+$color-brand: #222;
 ```
