@@ -18,6 +18,7 @@ This is a living document and new ideas are always welcome.
  - [BangFormat](#bangformat)
  - [BorderZero](#borderzero)
  - [ColorKeyword](#colorkeyword)
+ - [ColorVariable](#colorvariable)
 
 
 
@@ -243,4 +244,23 @@ $color-brand: black;
 
 // good: hexadecimal color
 $color-brand: #222;
+```
+
+### ColorVariable
+
+Prefer color literals (keywords or hexadecimal codes) to be used only in
+variable declarations. They should be referred to via variables everywhere else.
+
+```scss
+// bad: literal color
+a {
+    color: blue;
+}
+
+// good: refer to color by variable name
+$color-base-links: #0a81ae;
+
+a {
+    color: $color-base-links
+}
 ```
