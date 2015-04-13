@@ -19,7 +19,7 @@ This is a living document and new ideas are always welcome.
  - [BorderZero](#borderzero)
  - [ColorKeyword](#colorkeyword)
  - [ColorVariable](#colorvariable)
-
+ - [Comment](#comment)
 
 
 
@@ -77,15 +77,6 @@ Begin every sub-section block with a title.
 .selector {}
 ```
 
-Prefer `//` comments over `/* ... */`.
-
-```scss
-// bad
-/* This is a comment that gets rendered. */
-
-// good
-// This comment never gets rendered.
-```
 
 
 
@@ -263,4 +254,16 @@ $color-base-links: #0a81ae;
 a {
     color: $color-base-links
 }
+```
+
+### Comment
+
+Prefer `//` comments over `/* ... */`.
+
+```scss
+// bad
+/* This is a comment that gets rendered. */
+
+// good
+// This comment never gets rendered.
 ```
