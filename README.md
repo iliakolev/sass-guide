@@ -276,7 +276,7 @@ declarations without inner `@content`, properties, `@include` declarations
 *with* inner `@content`, then nested rule sets.
 
 ```scss
-//bad
+// bad
 .selector {
     .selector__item {
         ...
@@ -284,13 +284,13 @@ declarations without inner `@content`, properties, `@include` declarations
 
     font-size: 20px;
     @extend %clearfix;
-    @include box():
+    @include box;
 }
 
 // good
 .selector {
     @extend %clearfix;
-    @include box():
+    @include box;
     font-size: 20px;
 
     .selector__item {
