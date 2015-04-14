@@ -20,6 +20,7 @@ This is a living document and new ideas are always welcome.
  - [ColorKeyword](#colorkeyword)
  - [ColorVariable](#colorvariable)
  - [Comment](#comment)
+ - [DeclarationOrder](#declarationorder)
 
 
 
@@ -266,4 +267,34 @@ Prefer `//` comments over `/* ... */`.
 
 // good
 // This comment never gets rendered.
+```
+
+### DeclarationOrder
+
+Rule sets should be ordered as follows: `@extend` declarations, `@include`
+declarations without inner `@content`, properties, `@include` declarations
+*with* inner `@content`, then nested rule sets.
+
+```scss
+//bad
+.selector {
+    .selector__item {
+        ...
+    }
+
+    font-size: 20px;
+    @extend %clearfix;
+    @include box():
+}
+
+// good
+.selector {
+    @extend %clearfix;
+    @include box():
+    font-size: 20px;
+
+    .selector__item {
+        ...
+    }
+}
 ```
