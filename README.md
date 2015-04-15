@@ -21,6 +21,8 @@ This is a living document and new ideas are always welcome.
  - [ColorVariable](#colorvariable)
  - [Comment](#comment)
  - [DeclarationOrder](#declarationorder)
+ - [ElsePlacement](#elseplacement)
+
 
 
 
@@ -296,5 +298,25 @@ declarations without inner `@content`, properties, `@include` declarations
     .selector__item {
         ...
     }
+}
+```
+### ElsePlacement
+
+Place `@else` statements on the same line as the preceding curly brace.
+
+```scss
+// bad
+@if {
+    ...
+}
+@else {
+    ...
+}
+
+// good
+@if {
+    ...
+} @else {
+    ...
 }
 ```
