@@ -22,6 +22,7 @@ This is a living document and new ideas are always welcome.
  - [Comment](#comment)
  - [DeclarationOrder](#declarationorder)
  - [ElsePlacement](#elseplacement)
+ - [IdSelector](#idselector)
 
 
 
@@ -319,4 +320,16 @@ Place `@else` statements on the same line as the preceding curly brace.
 } @else {
     ...
 }
+```
+
+### IdSelector
+
+Avoid using ID selectors.
+
+```scss
+// bad: highly-specific styling for a single element via ID
+#selector {}
+
+// good: reusable class
+.selector {}
 ```
