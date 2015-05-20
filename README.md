@@ -11,7 +11,6 @@ This is a living document and new ideas are always welcome.
  - [80 character limit](#80-character-limit)
  - [Capitalization](#capitalization)
  - [Declaration Order](#declaration-order)
- - [Indentation](#indentation)
  - [Leading Zero](#leading-zero)
  - [Url Quotes](#url-quotes)
 3. [Linters](#3-linters)
@@ -23,6 +22,7 @@ This is a living document and new ideas are always welcome.
  - [DeclarationOrder](#declarationorder)
  - [ElsePlacement](#elseplacement)
  - [IdSelector](#idselector)
+ - [Indentation](#indentation)
 
 
 
@@ -136,22 +136,6 @@ declarations, then nested rule sets.
     @extend %clearfix;
     @include box();
     padding: 10px;
-}
-```
-
-### Indentation
-
-Use 4 space indentation.
-
-```scss
-// bad: 2 spaces
-.selector {
-  text-transform: uppercase;
-}
-
-// good: 4 spaces
-.selector {
-    text-transform: uppercase;
 }
 ```
 
@@ -332,4 +316,20 @@ Avoid using ID selectors.
 
 // good: reusable class
 .selector {}
+```
+
+### Indentation
+
+Use 4 space indentation.
+
+```scss
+// bad: 2 spaces
+.selector {
+  width: 100%;
+}
+
+// good: 4 spaces
+.selector {
+    width: 100%;
+}
 ```
