@@ -23,6 +23,7 @@ This is a living document and new ideas are always welcome.
  - [ElsePlacement](#elseplacement)
  - [IdSelector](#idselector)
  - [Indentation](#indentation)
+ - [ImportPath](#importpath)
 
 
 
@@ -332,4 +333,21 @@ Use 4 space indentation.
 .selector {
     width: 100%;
 }
+```
+
+### ImportPath
+
+The basenames of `@import`ed SCSS partials should not begin with an underscore 
+and should not include the filename extension.
+
+```scss
+// bad
+@import "foo/_bar.scss";
+@import "_bar.scss";
+@import "_bar";
+@import "bar.scss";
+
+// good
+@import "foo/bar";
+@import "bar";
 ```
