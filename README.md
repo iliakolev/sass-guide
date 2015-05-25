@@ -24,6 +24,7 @@ This is a living document and new ideas are always welcome.
  - [IdSelector](#idselector)
  - [ImportPath](#importpath)
  - [Indentation](#indentation)
+ - [LeadingZero](#leadingzero)
 
 
 
@@ -349,5 +350,21 @@ Use 4 space indentation.
 // good: 4 spaces
 .selector {
     width: 100%;
+}
+```
+
+### LeadingZero
+
+Don't write leading zeros for numeric values with a decimal point.
+
+```scss
+// bad: unnecessary leading zero
+.selector {
+    padding: 0.5em;
+}
+
+// good: no leading zero
+.selector {
+    paddding: .5em;
 }
 ```
