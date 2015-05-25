@@ -365,6 +365,6 @@ Don't write leading zeros for numeric values with a decimal point.
 
 // good: no leading zero
 .selector {
-    paddding: .5em;
+    padding: .5em;
 }
 ```
