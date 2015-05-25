@@ -22,8 +22,8 @@ This is a living document and new ideas are always welcome.
  - [DeclarationOrder](#declarationorder)
  - [ElsePlacement](#elseplacement)
  - [IdSelector](#idselector)
- - [Indentation](#indentation)
  - [ImportPath](#importpath)
+ - [Indentation](#indentation)
 
 
 
@@ -319,22 +319,6 @@ Avoid using ID selectors.
 .selector {}
 ```
 
-### Indentation
-
-Use 4 space indentation.
-
-```scss
-// bad: 2 spaces
-.selector {
-  width: 100%;
-}
-
-// good: 4 spaces
-.selector {
-    width: 100%;
-}
-```
-
 ### ImportPath
 
 The basenames of `@import`ed SCSS partials should not begin with an underscore 
@@ -350,4 +334,20 @@ and should not include the filename extension.
 // good
 @import "foo/bar";
 @import "bar";
+```
+
+### Indentation
+
+Use 4 space indentation.
+
+```scss
+// bad: 2 spaces
+.selector {
+  width: 100%;
+}
+
+// good: 4 spaces
+.selector {
+    width: 100%;
+}
 ```
