@@ -25,6 +25,7 @@ This is a living document and new ideas are always welcome.
  - [ImportPath](#importpath)
  - [Indentation](#indentation)
  - [LeadingZero](#leadingzero)
+ - [NameFormat](#nameformat)
 
 
 
@@ -366,5 +367,26 @@ Don't write leading zeros for numeric values with a decimal point.
 // good: no leading zero
 .selector {
     padding: .5em;
+}
+```
+
+### NameFormat
+
+Functions, mixins, variables, and placeholders should be declared with all
+lowercase letters and hyphens instead of underscores.
+
+```scss
+// bad: uppercase characters
+$myVar: 10px;
+
+@mixin myMixin() {
+    ...
+}
+
+// good: all lowercase with hyphens
+$my-var: 10px;
+
+@mixin my-mixin() {
+    ...
 }
 ```
