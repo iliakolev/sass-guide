@@ -26,6 +26,7 @@ This is a living document and new ideas are always welcome.
  - [Indentation](#indentation)
  - [LeadingZero](#leadingzero)
  - [NameFormat](#nameformat)
+ - [NestingDepth](#nestingdepth)
 
 
 
@@ -388,5 +389,36 @@ $my-var: 10px;
 
 @mixin my-mixin() {
     ...
+}
+```
+
+### NestingDepth
+
+Overly nested rules will result in over-qualified CSS that could prove hard to
+maintain, output unnecessary selectors and is generally considered bad practice.
+
+```scss
+// bad: deeply nested
+.one {
+    .two {
+        .three {
+            .four {
+                ...
+            }
+        }
+    }
+}
+
+// good
+.three {
+
+    &:hover {
+        ...
+    }
+
+    &:visited {
+        ...
+    }
+
 }
 ```
