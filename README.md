@@ -27,6 +27,7 @@ This is a living document and new ideas are always welcome.
  - [LeadingZero](#leadingzero)
  - [NameFormat](#nameformat)
  - [NestingDepth](#nestingdepth)
+ - [PlaceholderInExtend](#placeholderinextend)
 
 
 
@@ -420,5 +421,23 @@ maintain, output unnecessary selectors and is generally considered bad practice.
         ...
     }
 
+}
+```
+
+### PlaceholderInExtend
+
+Using a class selector with the `@extend` statement statement usually results in
+more generated CSS than when using a placeholder selector. Furthermore, Sass
+specifically introduced placeholder selectors in order to be used with `@extend`.
+
+```scss
+// bad: extending a class
+.selector {
+    @extend .clearfix;
+}
+
+// good: extending a placeholder
+.selector {
+    @extend %clearfix;
 }
 ```
